@@ -14,7 +14,7 @@ def wrapper(f):
         return f(*args)
     return writeToFile
 
-@wrapper
+@wrapper #wrapper(calc)
 def calc(a, b, operation):
     """Calulator (a, b, ['+']|['-']|['/']|['*'])"""
     if (operation == '*'):
